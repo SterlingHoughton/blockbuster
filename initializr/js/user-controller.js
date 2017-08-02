@@ -39,7 +39,7 @@ var userController = {
   configureAuthenticatedRequests: function() {
     $.ajaxSetup({
       'beforeSend': function(xhr) {
-        xhr.setRequestHeader('Authorization', 'Bearer' + localStorage.getItem('userToken'));
+        xhr.setRequestHeader('Authorization', 'Bearer ' + localStorage.getItem('userToken'));
       }
     });
   },
@@ -81,6 +81,14 @@ var userController = {
       that.uiElements.logoutButton.hide();
       that.uiElements.profileButton.hide();
       that.uiElements.loginButton.show();
+    });
+
+    this.uiElements.profileButton.click(function(e) {
+      var url = that.data.config.apiBaseUrl + '/user-profile';
+
+      $.get(url, function(data, status) {
+        alert(JSON.stringify(data));
+      })
     });
   }
 }
