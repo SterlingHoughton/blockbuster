@@ -1,0 +1,38 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.0",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-west-2",
+      "eventTime": "2017-07-27T02:54:01.857Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "AWS:AROAIJE5NPFW22CVAQSK4"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "127.0.0.1"
+      },
+      "responseElements": {
+        "x-amz-request-id": "BD348FDB6C8FC423",
+        "x-amz-id-2": "L2vu5Rz9D+LO6R9SE6gXifI3n4wAXU9Ndfr6VqwX/hor8M2H8ucoNGOuzWulmigpKuSQChKiqj8="
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "MTBlMTBmOWItZjlkNi00MjY2LWI1N2ItMjliYTc2NGEwZTQw",
+        "bucket": {
+          "name": "blockbuster-video-upload",
+          "ownerIdentity": {
+            "principalId": "A3LY8FZ5BYY3PZ"
+          },
+          "arn": "arn:aws:s3:::blockbuster-video-upload"
+        },
+        "object": {
+          "key": "038_wrapup_and_thank_you-web-720p.mp4",
+          "size": 5628835,
+          "eTag": "a61d1c3f20446b13cccf250fe9584e72",
+          "sequencer": "00597955C935B516D7"
+        }
+      }
+    }
+  ]
+}
