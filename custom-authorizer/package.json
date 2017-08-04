@@ -1,0 +1,16 @@
+{
+  "name": "transcode-video",
+  "version": "1.0.0",
+  "description": "user-profile Lambda function",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "zip -r Lambda-Deployment.zip * -x *.zip *.json *.log",
+    "deploy": "aws lambda update-function-code --function-name arn:aws:lambda:us-west-2:510382540637:function:custom-authorizer --zip-file fileb://Lambda-Deployment.zip"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^7.4.1",
+    "request": "^2.81.0"
+  },
+  "author": "Sterling Houghton",
+  "license": "ISC"
+}
